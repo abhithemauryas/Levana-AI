@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+
 import ChartSection from "../components/ChartSection";
 import ActiveIntegration from "../components/ActiveIntegration";
 import LeadSource from "../components/LeadSource";
@@ -14,8 +14,6 @@ import EmployeeCards from "../components/EmployeeCards";
 export default function Dashboard() {
   return (
     <>
-      <Header />
-
       <div className="grid grid-cols-12 gap-4">
         <ChartSection />
         <ProfileSection/>
