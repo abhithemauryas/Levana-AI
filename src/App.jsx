@@ -15,8 +15,8 @@ function App() {
           {/* Pages */}
           <Route index element={<Dashboard />} />
           <Route path="data-pool" element={<DataPool/>} />
-          <Route path="realtime" element={ <div>RealTimeCampaign</div>} />
-          {/* <Route path="realtime" element={<RealTimeCampaign />} /> */}
+          <Route path="realtime" element={ <RealTimeCampaign/> } />
+          <Route path="realtime" element={<RealTimeCampaign />} />
           <Route path="scheduled" element={<div>Scheduled Campaign</div>} />
           <Route path="employees" element={<div>Employees</div>} />
           <Route path="ai-agents" element={<div>AI Agents</div>} />
