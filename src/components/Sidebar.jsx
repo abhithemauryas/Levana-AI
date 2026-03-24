@@ -7,6 +7,7 @@ import {
 import { FiLayers, FiArrowRight, FiClock } from "react-icons/fi";
 import { MdOutlineIntegrationInstructions } from "react-icons/md";
 import { BsBarChart } from "react-icons/bs";
+import logo from "../assets/img/vox.png";
 
 export default function Sidebar() {
 
@@ -41,11 +42,13 @@ export default function Sidebar() {
       <div>
 
         {/* LOGO */}
-        <div className="flex justify-center mb-8">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-            VOK
-          </h1>
-        </div>
+      <div className="flex justify-center mb-8">
+        <img 
+          src={logo} 
+          alt="Logo" 
+          className="h-12 w-auto object-contain"
+        />
+      </div>
 
         <p className="text-gray-400 text-xs mb-3">General Dashboard</p>
 
