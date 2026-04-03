@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import DataPool from "./pages/DataPool";
 import RealTimeCampaign from "./pages/RealTimeCampaign";
 import SchedulePage from "./pages/SchedulePage";
+import AllEmployees from "./pages/AllEmployees";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="realtime" element={ <RealTimeCampaign/> } />
           <Route path="realtime" element={<RealTimeCampaign />} />
           <Route path="scheduled" element={<SchedulePage/>} />
-          <Route path="employees" element={<div>Employees</div>} />
+          <Route path="employees" element={<AllEmployees/>} />
           <Route path="ai-agents" element={<div>AI Agents</div>} />
           <Route path="organization" element={<div>Organization</div>} />
           <Route path="projects" element={<div>Projects</div>} />

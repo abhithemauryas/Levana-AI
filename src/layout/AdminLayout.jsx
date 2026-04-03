@@ -4,21 +4,25 @@ import { Outlet } from "react-router-dom";
 
 export default function AdminLayout() {
   return (
-    <div className="h-screen bg-[#0B0F18] text-white flex p-4 gap-4 overflow-hidden">
+    <div className="h-screen bg-[#0B0F18] text-white">
 
-      {/* ===== SIDEBAR (FIXED + NO SCROLL) ===== */}
-      <div className="w-[270px] h-full flex-shrink-0">
-        <Sidebar />
+      {/* SIDEBAR (FIXED + INDEPENDENT SCROLL) */}
+      <div className="fixed left-4 top-4 bottom-4 w-[270px]">
+        <div className="h-full overflow-y-auto no-scrollbar">
+          <Sidebar />
+        </div>
       </div>
 
-      {/* ===== RIGHT SIDE ===== */}
-      <div className="flex-1 flex flex-col overflow-hidden">
+      {/* RIGHT SIDE */}
+      <div className="ml-[290px] h-full flex flex-col p-4 gap-4">
 
-        {/* HEADER (FIXED) */}
-        <Header />
+        {/* HEADER (FIXED INSIDE RIGHT) */}
+        <div className="flex-shrink-0">
+          <Header />
+        </div>
 
-        {/* CONTENT (ONLY THIS SCROLLS) */}
-        <div className="flex-1 overflow-y-auto space-y-6 pr-2 no-scrollbar">
+        {/* CONTENT SCROLL */}
+        <div className="flex-1 overflow-y-auto pr-2 no-scrollbar">
           <Outlet />
         </div>
 
